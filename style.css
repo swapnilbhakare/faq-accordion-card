@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Verydarkdesaturatedblue: hsl(238, 29%, 16%);
+  --Softred: hsl(14, 88%, 65%);
+
+  --Softviolet: hsl(273, 75%, 66%);
+  --Softblue: hsl(240, 73%, 65%);
+
+  --Verydarkgrayishblue: hsl(237, 12%, 33%);
+  --Darkgrayishblue: hsl(240, 6%, 50%);
+
+  --Lightgrayishblue: hsl(240, 5%, 91%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 120px;
+  padding: 0;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+  width: 900px;
+  height: 500px;
+  background-color: white;
+
+  margin: 0 auto;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.left-side {
+  width: 50%;
+  background: url(images/bg-pattern-desktop.svg);
+  background-size: contain;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  border-radius: 25px 0 0 25px;
+  overflow: hidden;
+
+  border: none;
+}
+.box {
+  position: absolute;
+  top: 325px;
+  left: 200px;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+}
+.women {
+  position: relative;
+  left: -70px;
+  top: 80px;
+}
+
+.right-side {
+  width: 50%;
+  padding-left: 50px;
+  padding-top: 80px;
+  border: none;
+}
+
+details {
+  padding: 10px 10px;
+  border: none;
+  border-bottom: 1px solid #e7e7e9;
+}
+details summary {
+  cursor: pointer;
+  color: hsl(238, 29%, 16%);
+  outline: none;
+}
+details summary:hover {
+  color: #f47c57;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary:after {
+  content: "";
+  background: url(../img/icon-arrow-down.png) no-repeat;
+  background-size: contain;
+  float: right;
+  width: 10px;
+  height: 10px;
+}
+details p {
+  padding-top: 5px;
+  line-height: 20px;
+  color: #787887;
+}
+details[open] summary {
+  font-weight: bold;
+}
+details[open] summary:hover {
+  color: #1d1e35;
+}
+details[open] summary:after {
+  background: url(../img/icon-arrow-up.png) no-repeat;
+  background-size: contain;
+}
+
+.attribution {
+  margin: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
