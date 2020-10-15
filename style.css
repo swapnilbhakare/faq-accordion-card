@@ -72,7 +72,8 @@ body {
 details {
   padding: 10px 10px;
   border: none;
-  border-bottom: 1px solid #e7e7e9;
+  width: 80%;
+  border-bottom: 2px solid #49494b;
 }
 details summary {
   cursor: pointer;
@@ -87,7 +88,7 @@ details summary::-webkit-details-marker {
 }
 details summary:after {
   content: "";
-  background: url(../img/icon-arrow-down.png) no-repeat;
+  background: url(images/icon-arrow-down.svg) no-repeat;
   background-size: contain;
   float: right;
   width: 10px;
@@ -105,8 +106,9 @@ details[open] summary:hover {
   color: #1d1e35;
 }
 details[open] summary:after {
-  background: url(../img/icon-arrow-up.png) no-repeat;
+  background: url(images/icon-arrow-down.svg) no-repeat;
   background-size: contain;
+  transform: rotate(180deg);
 }
 
 .attribution {
